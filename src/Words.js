@@ -16,7 +16,7 @@ export const ValidWordSet = async () => {
         .then((response) => response.text())
         .then((result) => {
             let wordArr;
-            wordArr = result.split('\r\n\n');
+            wordArr = result.split('\n');
             todaysWord = wordArr[Math.floor(Math.random() * wordArr.length)]
             wordSet = new Set(wordArr)
         });
