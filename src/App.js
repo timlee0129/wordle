@@ -57,7 +57,7 @@ function App() {
         if (wordSet.has(currWord.toLowerCase())) {
             setCurrAttempt({ attempt: currAttempt.attempt + 1, letterPos: 0 });
         } else {
-            console.log(wordSet, currWord.toLowerCase(), correctWord.toUpperCase())
+            //console.log(wordSet, currWord.toLowerCase(), correctWord.toUpperCase())
             alert("Invalid word");
             return;
         }
